@@ -30,8 +30,10 @@
 - An object that *receives* and *passes* an array of data <span style="color: #e49436">indefinitely</span>
 - Can have a filter where those that fail will be immediately passed
 - Has an <span style="color: #e49436">objective</span> that should be fulfilled
+---
 - The size of an array received will not always be the size of the array passed but all the data will still be passed. If it received an array with a size of 50, it can be passed as 50 arrays with a size of 1. The size of array passed will heavily depend on the pipe's objective.
 - Can be configured <span style="color: #e49436">via config</span>
+---
 - Currently there are 16 available pipes. Here are some notable pipes:
   1. Grouper - for regulating the size of arrays that goes through the system because some pipes perform better when they receive a larger/smaller size
   2. TerminationHistory - completely useless if `Terminator` pipe is not connected ahead of it
