@@ -2,13 +2,9 @@
 
 ---
 
-#### What
+#### What, Why, How
 - A **node module** that keeps YouTube data and metadata up to date on a database
-
-#### Why
 - To have the latest data available on a database instead of querying YouTube API
-
-#### How
 - By giving the data to a <span style="color: #e49436">**plumber**</span> which blasts the data to a system of connected <span style="color: #e49436">**pipes**</span> starting from the <span style="color: #e49436">**source**</span>
 
 ---
@@ -24,18 +20,18 @@
 
 ### Plumber
 - An object that forms a system by connecting a **source** to any number of **pipes**
-- The order of pipes connected are extremely important to make everything work as expected
+- The <span style="color: #e49436">order is important</span> for pipes to make everything work as expected
 - Knows the state of every pipe connected (how many are [done | left])
 - Responsible for blasting out the whole system
 
 ---
 
 ### Pipe
-- An object that *receives* and *passes* an array of data indefinitely
+- An object that *receives* and *passes* an array of data <span style="color: #e49436">indefinitely</span>
 - Can have a filter where those that fail will be immediately passed
-- Has an objective that should be fulfilled
+- Has an <span style="color: #e49436">objective</span> that should be fulfilled
 - The size of an array received will not always be the size of the array passed but all the data will still be passed. If it received an array with a size of 50, it can be passed as 50 arrays with a size of 1. The size of array passed will heavily depend on the pipe's objective.
-- Can be configured via config.
+- Can be configured <span style="color: #e49436">via config</span>
 - Currently there are 16 available pipes. Here are some notable pipes:
   1. Grouper - for regulating the size of arrays that goes through the system because some pipes perform better when they receive a larger/smaller size
   2. TerminationHistory - completely useless if `Terminator` pipe is not connected ahead of it
@@ -79,7 +75,7 @@
 
 #### foxy.collect_data_for_review([array of channel objects])
 - Uses `ChannelList` as *source*
-- Has 7 connected pipes: YTChannel, LastUploadDate, Mapper, Updater, **VideoIDGetter**, YTVideo, VideoUpserter.
+- Has 7 connected pipes: YTChannel, LastUploadDate, Mapper, Updater, <span style="color: #e49436">VideoIDGetter</span>, YTVideo, VideoUpserter.
 - Currently used by anytv/channel-analyzer
 
 ---
@@ -93,4 +89,5 @@
 
 ### Quirks
 - Foxy still cannot use multipe types of authentication in a system.
-- Foxy exits the program when there are no more api keys or google projects on the database.
+- Foxy <span style="color: #e49436">exits the program</span> when there are no more api keys or google projects on the database.
+- Database dependency inconsistencies. Some table names are from config, some are not.
