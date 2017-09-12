@@ -12,9 +12,9 @@
 ### Source
 - A special type of pipe that transforms raw data to a <span style="color: #e49436">known form</span> that will be passed on to the next pipe
 - Current available source pipes:
-  1. <span style="color: #e49436">ChannelList</span> - converts an array of objects to an array of channel objects.
-  2. <span style="color: #e49436">Crawler</span> - converts a `cms` to an array of channels that belongs to it.
-  3. <span style="color: #e49436">VideoList</span> - converts an array of objects to an array of video objects but currently not being used.
+  1. <span style="color: #e49436">ChannelList</span> converts an array of objects to an array of channel objects.
+  2. <span style="color: #e49436">Crawler</span> converts a `cms` to an array of channels that belongs to it.
+  3. <span style="color: #e49436">VideoList</span> converts an array of objects to an array of video objects but currently not being used.
 
 ---
 
@@ -35,10 +35,10 @@
 - Can be configured <span style="color: #e49436">via config</span>
 ---
 - Currently there are 16 available pipes. Here are some notable pipes:
-  1. Grouper - for regulating the size of arrays that goes through the system because some pipes perform better when they receive a larger/smaller size
-  2. TerminationHistory - completely useless if `Terminator` pipe is not connected ahead of it
-  3. Updater - should be connected last since it is the one responsible for updating the database
-  4. VideoIDGetter - completely alters the data that goes through the system, from channels objects to video objects.
+  1. <span style="color: #e49436">Grouper</span> to regulate the size of arrays that goes through the system because some pipes perform better when they receive a larger/smaller size
+  2. <span style="color: #e49436">TerminationHistory</span> is completely useless if `Terminator` pipe is not connected ahead of it
+  3. <span style="color: #e49436">Updater</span> should always be connected last since it is the one responsible for updating the database
+  4. <span style="color: #e49436">VideoIDGetter</span> completely alters the data that goes through the system, from channels objects to video objects.
 
 ---
 
@@ -91,5 +91,5 @@
 
 ### Quirks
 - Foxy still cannot use multipe types of authentication in a system.
-- Foxy <span style="color: #e49436">exits the program</span> when there are no more api keys or google projects on the database.
+- Foxy <span style="color: #e49436">exits the program</span> when there are no more API keys or Google projects on the database.
 - Database dependency inconsistencies. Some table names are from config, some are not.
