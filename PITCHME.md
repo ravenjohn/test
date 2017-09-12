@@ -2,8 +2,8 @@
 
 ---
 
-#### What, Why, How
-- A **node module** that keeps YouTube data and metadata up to date on a database
+### What, Why, How
+- A **node module** that keeps YouTube data and <span style="color: #e49436">metadata</span> up-to-date on a database
 - To have the latest data available on a database instead of querying YouTube API
 - By giving the data to a <span style="color: #e49436">**plumber**</span> which blasts the data to a system of connected <span style="color: #e49436">**pipes**</span> starting from the <span style="color: #e49436">**source**</span>
 
