@@ -4,17 +4,17 @@
 
 ### What, Why, How
 - A **node module** that keeps YouTube data and <span style="color: #e49436">metadata</span> up-to-date on a database
-- To have the latest data available on a database instead of querying YouTube API
+- To have the latest data available on a database instead of querying the YouTube APIs
 - By giving the data to a <span style="color: #e49436">**plumber**</span> which blasts the data to a system of connected <span style="color: #e49436">**pipes**</span> starting from the <span style="color: #e49436">**source**</span>
 
 ---
 
 ### Source
-- A special type of pipe that transforms raw data to a known form that will be passed on to the next pipe
+- A special type of pipe that transforms raw data to a <span style="color: #e49436">known form</span> that will be passed on to the next pipe
 - Current available source pipes:
-  1. ChannelList - Converts an array of objects to an array of Channel objects.
-  2. Crawler - Converts a `cms` to an array of channels that belongs to it.
-  3. VideoList - Converts an array of objects to an array of Video objects. Currently not being used.
+  1. <span style="color: #e49436">ChannelList</span> - converts an array of objects to an array of channel objects.
+  2. <span style="color: #e49436">Crawler</span> - converts a `cms` to an array of channels that belongs to it.
+  3. <span style="color: #e49436">VideoList</span> - converts an array of objects to an array of video objects but currently not being used.
 
 ---
 
