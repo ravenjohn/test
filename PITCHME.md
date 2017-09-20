@@ -10,13 +10,6 @@
 
 ---
 
-### History / Trivias
-- Started Oct 2014
-- `cuddle` was made for this project due to the massive API calls
-- `anytv-node-mysql` was born from this project
-
----
-
 ### API
 
 ---
@@ -41,7 +34,7 @@
 5. <span style="color: #e49436">analytics</span> - Calls *foxy.update_analytics*.
 6. <span style="color: #e49436">videos</span> - Calls *foxy.replace_videos*.
 
-All of these jobs are called together with *cluster.js* which helps in doing things faster. Most of them has a specfic batch size which directly relates to its machine's capabilities.
+All of these jobs are called together with *cluster.js* which helps in utilizing the processors. Most of them has a specfic batch size which directly relates to its machine's processing capabilities.
 
 ----
 
@@ -58,3 +51,11 @@ All of these jobs are called together with *cluster.js* which helps in doing thi
 #### Severus
 - Takes a snapshot of the stats of the top networks
 - Absolutely no idea why this is on this repo
+
+---
+
+### History / Trivias
+- Started Oct 2014
+- `cuddle` was made for this project due to the massive API calls
+- `anytv-node-mysql` was born from this project
+
