@@ -35,7 +35,7 @@
 #### bi-hourly.sh
 
 1. <span style="color: #e49436">import_ytfreedom</span> - Inserts new channels from *ytfreedom.channels* to *master.mcn_channels*
-2. <span style="color: #e49436">new_partners</span> - Calls *foxy.crawl*. Grabs all our partners from YouTube API then detect which channels are new, moved and unlinked.
+2. <span style="color: #e49436">new_partners</span> - Calls *foxy.crawl*.
 3. <span style="color: #e49436">non_partners</span> - Calls *foxy.update_non_partners*.
 4. <span style="color: #e49436">partners</span> - Calls *foxy.update_partners*.
 5. <span style="color: #e49436">analytics</span> - Calls *foxy.update_analytics*.
