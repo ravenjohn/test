@@ -58,4 +58,4 @@
 - Started Oct 2014
 - `cuddle` was made for this project due to the massive API calls
 - `anytv-node-mysql` was born from this project
-
+- The top 1 contributor has 407 commits and the top 2 has 23 commits
