@@ -34,7 +34,7 @@
 5. <span style="color: #e49436">analytics</span> - Calls *foxy.update_analytics*.
 6. <span style="color: #e49436">videos</span> - Calls *foxy.replace_videos*.
 
-All of these jobs are called together with *cluster.js* which helps in utilizing the processors. Most of them has a specfic batch size which directly relates to its machine's processing capabilities.
+> All of these jobs are called together with *cluster.js* which helps in utilizing the processors. Most of them has a specfic batch size which directly relates to its machine's processing capabilities.
 
 ----
 
