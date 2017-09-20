@@ -26,7 +26,7 @@
 
 ---
 
-### Pipe
+### Pipe ![pipe](pipe.png)
 - An object that *receives* and *passes* an array of data <span style="color: #e49436">indefinitely</span>
 - Can have a filter where those that fail will be immediately passed
 - Has an <span style="color: #e49436">objective</span> that should be fulfilled
